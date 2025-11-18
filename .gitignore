@@ -1,0 +1,5 @@
+build/
+dist/
+image/
+env/
+*.spec
