@@ -8,6 +8,8 @@ image/
 
 # python venv
 env/
+venv/
+.env/
 
 # vscode config
 .vscode/
