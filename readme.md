@@ -67,3 +67,25 @@ python imageCompressor.py
 请输入过期天数（默认7天）:
 请输入压缩质量10-100（默认65%）:
 ```
+
+## 额外建议
+
+pip标准源通常会有下载慢的问题，可以在下载时添加`-i {下载源}`的方式临时换源，也可以`pip config set global.index-url {下载源}`的方式设定永久换源
+
+```shell
+# 临时换源
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+```shell
+# 永久换源
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt
+```
+
+```text
+常见源：
+清华源：https://pypi.tuna.tsinghua.edu.cn/simple
+阿里源：https://mirrors.aliyun.com/pypi/simple/
+豆瓣源：http://pypi.douban.com/simple/
+```
