@@ -74,12 +74,12 @@ pip标准源通常会有下载慢的问题，可以在下载时添加`-i {下载
 
 ```shell
 # 临时换源
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt -i https://pypi.mirrors.ustc.edu.cn/simple/
 ```
 
 ```shell
 # 永久换源
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 pip install -r requirements.txt
 ```
 
@@ -88,4 +88,5 @@ pip install -r requirements.txt
 清华源：https://pypi.tuna.tsinghua.edu.cn/simple
 阿里源：https://mirrors.aliyun.com/pypi/simple/
 豆瓣源：http://pypi.douban.com/simple/
+中科大源：https://pypi.mirrors.ustc.edu.cn/simple/
 ```
